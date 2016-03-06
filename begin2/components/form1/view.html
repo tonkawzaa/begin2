@@ -1,0 +1,36 @@
+<div data-role="view" data-title="Form1" data-layout="main" data-model="app.form1" data-show="app.form1.onShow" data-after-show="app.form1.afterShow">
+    <div id="form1Model" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+
+                    <label>Username
+                        <input data-bind="value: form1Model.fields.username" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Date
+                        <input data-bind="value: form1Model.fields.birthday" type="date">
+                    </label>
+
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: form1Model.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: form1Model.submit }">Confirm</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_form1Model -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_form1Model -->
+    </div>
+
+    <!-- START_CUSTOM_CODE_form1 -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_form1 -->
+</div>
