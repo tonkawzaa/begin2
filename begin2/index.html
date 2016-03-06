@@ -14,23 +14,18 @@
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/angula/index.js"></script>
     <script src="components/form1/index.js"></script>
     <script src="components/home/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
             </div>
         </header>
 
         <!-- application views will be rendered here -->
-
-        <footer data-role="footer">
-            <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home">Home View</a>
-                <a href="components/form1/view.html" data-icon="bookmarks">Form1</a>
-            </div>
-        </footer>
     </div>
 
     <div data-role="layout" data-id="main-nonav">
@@ -41,9 +36,19 @@
         </header>
 
         <!-- application views will be rendered here -->
+    </div>
 
-        <footer data-role="footer">
-        </footer>
+    <div id="appDrawer" data-role="drawer" data-title="Navigation">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <ul id="navigation-container" data-role="listview">
+            <li><a href="components/home/view.html" data-icon="home">Home View</a></li>
+            <li><a href="components/form1/view.html" data-icon="bookmarks">Form1</a></li>
+            <li><a href="components/angula/view.html" data-icon="details">angula</a></li>
+        </ul>
     </div>
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->

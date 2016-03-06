@@ -37,12 +37,19 @@
       "title": "Form1",
       "addToNavigation": true,
       "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "angula",
+      "components": [],
+      "title": "angula",
+      "addToNavigation": true,
+      "icon": "details"
     }
   ],
   "dataProviders": [],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
+  "navigation": "drawer",
   "view": "home",
-  "transition": "slide",
   "skin": "flat"
 }
