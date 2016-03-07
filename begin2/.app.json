@@ -45,6 +45,22 @@
       "title": "angula",
       "addToNavigation": true,
       "icon": "details"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "data",
+      "components": [],
+      "title": "data",
+      "addToNavigation": true,
+      "icon": "details"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "login",
+      "components": [],
+      "title": "login",
+      "addToNavigation": true,
+      "icon": "details"
     }
   ],
   "dataProviders": [],
