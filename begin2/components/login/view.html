@@ -1,7 +1,39 @@
 <div data-role="view" data-title="login" data-layout="main" data-model="app.login" data-show="app.login.onShow" data-after-show="app.login.afterShow">
+    <div id="loginModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
 
-    <!-- START_CUSTOM_CODE_login -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+                    <label>Username
+                        <input data-bind="value: loginModel.fields.user" placeholder="Username" type="text">
+                    </label>
 
-    <!-- END_CUSTOM_CODE_login -->
+                </li>
+                <li>
+
+                    <label>password
+                        <input data-bind="value: loginModel.fields.password" placeholder="password" type="text">
+                    </label>
+
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: loginModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: loginModel.submit }">Confirm</a>
+            </div>
+        </form>
+        
+        <!-- <ul data-role="listview" data-source="login.data" </ul>  -->
+
+    <script type="text/x-kendo-template" id="books-template">
+        
+            <div class="bookImage">#: required_points #</div>
+            <div class="bookTitle">#: id #</div>
+            <div class="bookAuthor">#: end_date #</div>
+    
+    </script>
+
+    </div>
+
 </div>

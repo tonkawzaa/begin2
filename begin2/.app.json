@@ -57,13 +57,44 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "login",
-      "components": [],
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "user",
+              "title": "Username",
+              "inputType": "text",
+              "placeholder": "Username"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "password",
+              "title": "password",
+              "inputType": "text",
+              "placeholder": "password"
+            }
+          ],
+          "name": "loginModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
       "title": "login",
       "addToNavigation": true,
       "icon": "details"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "dataProv",
+      "title": "JSONData",
+      "source": "json",
+      "url": "https://greenapi.odooportal.com"
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "drawer",
   "view": "home",

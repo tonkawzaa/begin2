@@ -1,7 +1,13 @@
 <div data-role="view" data-title="data" data-layout="main" data-model="app.data" data-show="app.data.onShow" data-after-show="app.data.afterShow">
 
-    <!-- START_CUSTOM_CODE_data -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    <ul data-role="listview" data-source="Books.data" data-template="books-template"></ul>
 
-    <!-- END_CUSTOM_CODE_data -->
+
+    <script type="text/x-kendo-template" id="books-template">
+        
+            <div class="bookImage">#: required_points #</div>
+            <div class="bookTitle">#: id #</div>
+            <div class="bookAuthor">#: end_date #</div>
+    
+    </script>
 </div>
